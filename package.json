@@ -1,0 +1,46 @@
+{
+  "name": "@wmutong/dsh-skin-ticket-monitor",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Deep-navy ticket-monitor skin for the DSH Web GUI: cyan/blue accents, ambient glow, and interaction motion. Palette, effects and motion only.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WMuTong/dsh-skin-ticket-monitor.git"
+  },
+  "homepage": "https://github.com/WMuTong/dsh-skin-ticket-monitor#readme",
+  "bugs": {
+    "url": "https://github.com/WMuTong/dsh-skin-ticket-monitor/issues"
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "theme",
+    "skin",
+    "appearance"
+  ]
+}
